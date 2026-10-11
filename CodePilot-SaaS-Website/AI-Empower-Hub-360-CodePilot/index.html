@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0B1120">
+    <meta name="description" content="AI Empower Hub 360 CodePilot: a focused AI coding workspace for project planning, code guidance, and local development.">
+    <title>CodePilot | AI Development Workspace — EmpowerHub 360</title>
+    <script>
+      try {
+        if (localStorage.getItem("empowerhub-theme") === "light") {
+          document.documentElement.dataset.theme = "light";
+        }
+      } catch (error) {
+        console.warn("Unable to load the saved EmpowerHub theme preference.", error);
+      }
+    </script>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/home-redesign.css"><link rel="stylesheet" href="styles/saas-polish.css">
+    <script type="module" src="src/app.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="AI Agentic Empower Hub Copilot home">
+        <span class="brand-symbol" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="brand-name">Empower<span>Hub</span></span>
+        <span class="brand-divider"></span>
+        <span class="brand-product">CodePilot</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation"><a href="#platform" data-section="platform">Product</a><a href="#demo" data-section="demo">How it works</a><a href="#pricing" data-section="pricing">Pricing</a><a href="#faq" data-section="faq">FAQ</a></nav>
+      <div class="header-actions">
+        <button class="theme-toggle" type="button" role="switch" aria-checked="true" aria-label="Dark mode" title="Switch to light theme">
+          <svg class="theme-icon-dark" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5 8.5 8.5 0 1 0 20.5 14.2Z"/></svg>
+          <svg class="theme-icon-light" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+          <span class="theme-toggle-label">Dark</span>
+        </button>
+        <a class="login-link" href="#sign-in" data-route="sign-in">Account preview</a>
+        <a class="button button-dark button-small workspace-launch" href="#dashboard" data-route="dashboard">Open workspace <span aria-hidden="true">↗</span></a>
+      </div>
+    </header>
+
+    <main id="home" class="cp-home">
+      <section class="cp-hero">
+        <div class="cp-glow cp-glow-one"></div>
+        <div class="cp-glow cp-glow-two"></div>
+        <div class="cp-container cp-hero-grid">
+          <div class="cp-intro">
+            <div class="cp-kicker"><span class="cp-pulse"></span> AI EMPOWER HUB 360 / CODEPILOT</div>
+            <h1>Your next build.<br><em>A clearer path.</em></h1>
+            <p class="cp-lead">Move from a scattered idea to a focused development plan. Think through requirements, explore code, and prepare your next release with an AI coding partner.</p>
+            <div class="cp-buttons">
+              <a class="cp-btn cp-primary" href="#dashboard" data-route="dashboard">Explore CodePilot <span>↗</span></a>
+              <a class="cp-btn cp-outline" href="#use-cases" data-route="use-cases">Explore use cases <span>→</span></a>
+            </div>
+            <div class="cp-caption"><span>✦</span> Local-first AI · Your model, your machine <span class="cp-sep">·</span> Preview experience</div>
+          </div>
+          <div class="cp-preview" aria-label="Illustrative AI project workflow preview">
+            <div class="cp-preview-top"><span class="cp-preview-logo">✦</span><b>CodePilot Studio</b><span class="cp-preview-tag">WORKSPACE PREVIEW</span></div>
+            <div class="cp-preview-body">
+              <div class="cp-preview-side"><span class="cp-side-title">YOUR PROJECT</span><strong>Customer Portal</strong><div class="cp-side-active">◈ &nbsp; AI Assistant</div><div>▤ &nbsp; Requirements</div><div>⌘ &nbsp; Development</div><div>◇ &nbsp; Testing</div><div>↗ &nbsp; Deployment</div><span class="cp-side-bottom">AI-Empower Hub 360</span></div>
+              <div class="cp-preview-content"><div class="cp-preview-breadcrumb">Projects <span>/</span> Customer Portal <span>/</span> Assistant</div><h3>What are we building today?</h3><p>Describe your idea and turn it into an actionable development plan.</p><div class="cp-message"><span class="cp-avatar">YOU</span><div>Build a secure customer portal with user accounts and an admin dashboard.</div></div><div class="cp-agent"><span class="cp-avatar cp-ai">✦</span><div><strong>CodePilot Assistant</strong><p>Great starting point. Let's break this into clear milestones.</p><div class="cp-agent-steps"><span>01 &nbsp; Requirements</span><span>02 &nbsp; Architecture</span><span>03 &nbsp; Implementation</span></div></div></div><div class="cp-input-faux">Ask CodePilot about your project <span>↗</span></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="cp-container cp-trustline"><span>ONE CONNECTED WORKFLOW</span><span>Requirements</span><b>→</b><span>Plan</span><b>→</b><span>Build</span><b>→</b><span>Test</span><b>→</b><span>Deploy</span></div>
+      </section>
+      <section class="cp-features cp-container" id="platform">
+        <div class="cp-section-heading"><div><span class="cp-label">BUILT FOR THE WAY YOU BUILD</span><h2>Less tool-switching.<br><em>More forward motion.</em></h2></div><p>Everything your project needs, from the first conversation to a release-ready checklist.</p></div>
+        <div class="cp-feature-grid">
+          <article class="cp-feature"><span class="cp-feature-icon">◎</span><span class="cp-feature-index">01 / DISCOVER</span><h3>Turn ideas into clarity</h3><p>Capture goals, users, features, and acceptance criteria before development begins.</p></article>
+          <article class="cp-feature"><span class="cp-feature-icon">▤</span><span class="cp-feature-index">02 / PLAN</span><h3>Make the next step obvious</h3><p>Break complex builds into practical milestones, tasks, and technical decisions.</p></article>
+          <article class="cp-feature"><span class="cp-feature-icon">⌘</span><span class="cp-feature-index">03 / CREATE</span><h3>Build with an AI partner</h3><p>Use a guided coding workspace to explore implementation approaches and iterate.</p></article>
+          <article class="cp-feature"><span class="cp-feature-icon">◇</span><span class="cp-feature-index">04 / DELIVER</span><h3>Prepare to ship confidently</h3><p>Bring testing, review, and deployment readiness into the same conversation.</p></article>
+        </div>
+      </section>
+
+      <section class="cp-showcase cp-container" id="demo"><div class="cp-section-heading"><div><span class="cp-label">SEE THE WORKSPACE</span><h2>A clearer path from<br><em>prompt to progress.</em></h2></div><p>Describe a project, work through requirements and plans, and ask the local AI assistant for code guidance.</p></div><div class="cp-showcase-panel"><div><span class="cp-label">LOCAL AI WORKSPACE</span><h3>AI assistance with your project context</h3><p>Connect your Ollama model to ask development questions from your own computer. Code changes and testing remain under your control.</p><a class="cp-btn cp-primary" href="#dashboard" data-route="dashboard">Try the workspace ↗</a></div><div class="cp-demo-code"><div class="cp-code-header"><span>project-plan.md</span><span>PREVIEW</span></div><div class="cp-workflow-tabs" role="group" aria-label="Workflow examples"><button type="button" data-example="plan" aria-pressed="true">Plan</button><button type="button" data-example="code" aria-pressed="false">Code</button><button type="button" data-example="review" aria-pressed="false">Review</button></div><pre id="workflow-example">## Customer portal
+
+01  Define user roles
+02  Plan authentication
+03  Build dashboard UI
+04  Review test cases
+05  Prepare deployment</pre><p class="cp-example-caption">Illustrative workflow · no code execution</p></div></div></section>
+      <section class="cp-pricing cp-container" id="pricing"><div class="cp-section-heading"><div><span class="cp-label">A PLAN FOR EVERY STAGE</span><h2>Built to start.<br><em>Designed to grow.</em></h2></div><p>Explore our proposed launch plans. Subscriptions are not available yet.</p></div><div class="cp-billing" role="group" aria-label="Proposed billing period"><button type="button" data-billing="monthly" aria-pressed="true">Monthly</button><button type="button" data-billing="annual" aria-pressed="false">Annual <span>Save 20%</span></button></div><div class="cp-price-grid">
+<article class="cp-price-card"><span>STARTER</span><h3>Explore</h3><p>Get to know the workspace.</p><div class="cp-amount">$0 <small>/ month</small></div><p class="cp-price-note">Free local preview available now</p><a class="cp-btn cp-outline" href="#dashboard" data-route="dashboard">Open preview →</a><ul><li>Local AI chat through Ollama</li><li>Guided development prompts</li><li>Requirements and planning</li><li>Bring your own local model</li></ul></article>
+<article class="cp-price-card cp-featured"><span>PRO · PROPOSED LAUNCH PLAN</span><h3>Build</h3><p>For independent developers.</p><div class="cp-amount">$<span data-price="pro">19</span> <small>/ month</small></div><p class="cp-price-note" data-billing-note>Proposed monthly price</p><a class="cp-btn cp-primary" href="#roadmap" data-section="roadmap">View planned features →</a><ul><li>Planned: hosted AI assistance</li><li>Planned: persistent projects</li><li>Planned: usage dashboard</li><li>Planned: expanded workflows</li></ul></article>
+<article class="cp-price-card"><span>TEAM · PROPOSED LAUNCH PLAN</span><h3>Collaborate</h3><p>For teams building together.</p><div class="cp-amount">$<span data-price="team">49</span> <small>/ seat / month</small></div><p class="cp-price-note" data-billing-note>Proposed monthly price</p><a class="cp-btn cp-outline" href="#roadmap" data-section="roadmap">Explore the roadmap →</a><ul><li>Planned: shared workspaces</li><li>Planned: member permissions</li><li>Planned: team usage controls</li><li>Planned: account administration</li></ul></article></div><p class="cp-pricing-disclaimer">Illustrative launch pricing, subject to change. No checkout, payment collection, or paid entitlement is active.</p></section>
+<section class="cp-container cp-roadmap" id="roadmap"><div class="cp-section-heading"><div><span class="cp-label">PRODUCT ROADMAP</span><h2>Know what’s here.<br><em>See what’s next.</em></h2></div><p>A transparent path from local development tool to hosted SaaS platform.</p></div><div class="cp-roadmap-grid"><article><span class="cp-state">AVAILABLE LOCALLY</span><h3>A focused AI workspace</h3><p>Ollama text chat, project prompts, and a responsive workspace. Start with Node.js on your computer.</p></article><article><span class="cp-state cp-planned">PLANNED NEXT</span><h3>Customer platform</h3><p>Verified accounts, private project storage, hosted AI, usage limits, and subscription billing.</p></article><article><span class="cp-state cp-planned">FUTURE WORKFLOWS</span><h3>From guidance to action</h3><p>Reviewed file changes, isolated test execution, and deployment integrations.</p></article></div></section>
+      <section class="cp-faq cp-container" id="faq"><span class="cp-label">FREQUENTLY ASKED QUESTIONS</span><h2>Good questions.<br><em>Clear answers.</em></h2><div class="cp-faq-list"><details><summary>Can I use CodePilot with Ollama?</summary><p>Yes. The local development server can connect to an Ollama model installed on the same computer. Start Ollama before using AI chat.</p></details><details><summary>Does CodePilot write files or deploy apps automatically?</summary><p>Not yet. The AI assistant provides text guidance. Automated file editing, test execution, and deployment require separate integrations and safety controls.</p></details><details><summary>Can I buy a subscription today?</summary><p>No. Subscription tiers are future plans. Payments and customer accounts have not been activated.</p></details><details><summary>Are customer accounts available?</summary><p>No. The current sign-in screen is a demo and must not be used for real credentials.</p></details></div></section>
+      <section class="cp-bottom-cta"><div class="cp-container cp-bottom-inner"><div><span class="cp-label">YOUR NEXT PROJECT STARTS HERE</span><h2>Have an idea?<br><em>Let's give it a plan.</em></h2><p>Open the project builder and explore the current CodePilot experience.</p></div><a class="cp-btn cp-primary" href="#dashboard" data-route="dashboard">Open CodePilot workspace <span>↗</span></a></div><p class="cp-disclaimer">Product preview · Local AI requires Ollama running on your computer; other product features remain in development.</p></section>
+    </main>
+
+
+    <main class="product-app" id="dashboard" hidden>
+      <header class="app-header">
+        <a class="brand app-brand" href="#home" data-home-link aria-label="Return to EmpowerHub home">
+          <span class="brand-symbol" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="brand-name">Empower<span>Hub</span></span>
+          <span class="brand-divider"></span>
+          <span class="brand-product">CodePilot</span>
+        </a>
+        <nav class="app-route-nav" aria-label="Workspace navigation">
+          <a href="#home" data-route="home">Home</a>
+          <a href="#dashboard" data-route="dashboard">Dashboard</a>
+          <a href="#about" data-route="about">About</a>
+          <a href="#use-cases" data-route="use-cases">Use Cases</a>
+          <a href="#sign-in" data-route="sign-in">Account preview</a>
+        </nav>
+        <button class="theme-toggle" type="button" role="switch" aria-checked="true" aria-label="Dark mode" title="Switch to light theme">
+          <svg class="theme-icon-dark" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5 8.5 8.5 0 1 0 20.5 14.2Z"/></svg>
+          <svg class="theme-icon-light" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+          <span class="theme-toggle-label">Dark</span>
+        </button>
+      </header>
+
+      <div class="product-layout">
+        <section class="project-chat" aria-label="AI coding project assistant">
+          <div class="project-heading">
+            <div class="project-heading-copy"><h1>AI Project Builder</h1><p class="cp-model-status" id="cp-model-status" role="status">Checking local AI connection…</p><p class="project-phase-status" id="project-phase-status" aria-live="polite">Requirements · Step 1 of 5</p></div>
+            <button class="new-project-button" type="button" id="new-project"><span>＋</span> New project</button>
+          </div>
+          <section class="builder-overview" aria-labelledby="builder-prompt">
+            <p class="builder-welcome">What are you building, and who is it for? I can help you define requirements, plan your project, develop features, test your application, and prepare for deployment.</p>
+            <h2 id="builder-prompt">What would you like to create?</h2>
+            <div class="builder-feature-grid">
+              <button class="builder-feature-card" type="button" data-prompt="Help me define the goals, core features, and user needs for my project.">
+                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4.5 6.5v5c0 4.7 3.2 7.8 7.5 9.5 4.3-1.7 7.5-4.8 7.5-9.5v-5L12 3Z"/><path d="m9 12 2 2 4-4"/></svg>
+                <span><strong>Requirements Gathering</strong><small>Define your goals, features, and user needs.</small></span>
+                <span class="feature-arrow" aria-hidden="true">↗</span>
+              </button>
+              <button class="builder-feature-card" type="button" data-prompt="Help me plan my project, organize tasks, choose a suitable architecture, and define development milestones.">
+                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M16 2v4M8 2v4M3 10h18M8 14h3M8 17h7"/></svg>
+                <span><strong>Project Planning</strong><small>Organize tasks, architecture, and development milestones.</small></span>
+                <span class="feature-arrow" aria-hidden="true">↗</span>
+              </button>
+              <button class="builder-feature-card" type="button" data-prompt="Help me develop this project by outlining code changes, reviewing implementation choices, and debugging issues.">
+                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m8 17-5-5 5-5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+                <span><strong>AI Development</strong><small>Generate, review, debug, and improve code.</small></span>
+                <span class="feature-arrow" aria-hidden="true">↗</span>
+              </button>
+              <button class="builder-feature-card" type="button" data-prompt="Help me plan tests to validate my application's functionality and prepare it for production deployment.">
+                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6M10 3v7l-5.3 8.2A2 2 0 0 0 6.4 21h11.2a2 2 0 0 0 1.7-2.8L14 10V3"/><path d="M8 15h8m-6-3h4"/></svg>
+                <span><strong>Testing &amp; Deployment</strong><small>Validate functionality and prepare applications for production.</small></span>
+                <span class="feature-arrow" aria-hidden="true">↗</span>
+              </button>
+            </div>
+          </section>
+          <section class="chat-panel" aria-label="Copilot conversation">
+            <div class="conversation" id="conversation" role="log" aria-live="polite" aria-relevant="additions">
+              <div class="chat-empty-state" id="chat-empty-state">
+                <span aria-hidden="true">✳</span>
+                <p>Your project conversation will appear here.</p>
+                <small>Choose a project card above or type a request to get started.</small>
+              </div>
+            </div>
+            <form class="copilot-composer" id="copilot-form">
+              <label class="visually-hidden" for="copilot-input">Message EmpowerHub Copilot</label>
+              <textarea id="copilot-input" rows="3" placeholder="Message EmpowerHub Copilot" required></textarea>
+              <div class="composer-toolbar">
+                <div class="composer-left" aria-label="Chat settings"><span class="cp-model-label">Local AI · Qwen</span>
+                  <span class="composer-setting"><span aria-hidden="true">⬡</span> Agent</span>
+                  <span class="composer-setting"><span aria-hidden="true">◉</span> Auto</span>
+                  <span class="composer-separator" aria-hidden="true"></span>
+                  <span class="composer-setting">Balanced</span>
+                </div>
+                <div class="composer-actions">
+                  <button type="submit" class="copilot-send" aria-label="Send message" title="Send message"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/></svg></button>
+                </div>
+              </div>
+            </form>
+          </section>
+          <section class="quick-actions" aria-labelledby="quick-actions-title">
+            <div class="quick-actions-heading"><h2 id="quick-actions-title">Quick actions</h2><p>Choose a starting point for your project.</p></div>
+            <div class="quick-action-grid">
+              <button class="quick-action" type="button" data-prompt="I want to build a website. Help me start by defining its purpose and key pages."><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M7 6.5h.01M10 6.5h.01"/></svg><span>Build a Website</span></button>
+              <button class="quick-action" type="button" data-prompt="I want to create an application. Help me clarify the user problem and essential features."><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M9 6h6m-6 4h6m-6 4h3m-1 5h.01"/></svg><span>Create an Application</span></button>
+              <button class="quick-action" type="button" data-prompt="I need a database for my project. Help me identify the data entities and relationships I should plan."><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.7 4 3 9 3s9-1.3 9-3V5M3 12c0 1.7 4 3 9 3s9-1.3 9-3"/></svg><span>Create a Database</span></button>
+              <button class="quick-action" type="button" data-prompt="I want to set up AI agents for my project. Help me identify tasks that could benefit from agent assistance and human review."><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="7" width="16" height="13" rx="2"/><path d="M9 7V4a3 3 0 0 1 6 0v3M8 13h.01M16 13h.01M9 17h6"/></svg><span>Set Up AI Agents</span></button>
+              <button class="quick-action quick-action-unavailable" type="button" disabled aria-describedby="upload-unavailable-note"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12"/></svg><span>Upload Files <small id="upload-unavailable-note">Not available in this prototype</small></span></button>
+              <button class="quick-action quick-action-unavailable" type="button" disabled aria-describedby="history-unavailable-note"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 2.6-6.4L3 8"/><path d="M3 3v5h5m4-1v5l3 2"/></svg><span>View Project History <small id="history-unavailable-note">Not available in this prototype</small></span></button>
+            </div>
+          </section>
+        </section>
+      </div>
+    </main>
+
+    <main class="route-page about-page" id="about-page" hidden>
+      <section class="route-hero section-wrap">
+        <div class="eyebrow"><span class="eyebrow-line"></span> ABOUT EMPOWERHUB COPILOT</div>
+        <h1>AI that empowers<br><span class="serif-accent">people to do more.</span></h1>
+        <p>AI Agentic Empower Hub Copilot is a shared workspace for turning real goals into coordinated work—bringing people, projects, and AI agents together with human direction at every step.</p>
+        <a class="button button-dark" href="#dashboard" data-route="dashboard">Explore the dashboard <span aria-hidden="true">↗</span></a>
+      </section>
+      <section class="about-values section-wrap">
+        <article><span>01</span><h2>People set the direction</h2><p>Your team defines the goal, approves the plan, and decides what is ready to ship.</p></article>
+        <article><span>02</span><h2>Agents help move work forward</h2><p>Copilot supports requirements, planning, development, testing, and release preparation.</p></article>
+        <article><span>03</span><h2>One connected project space</h2><p>Keep project conversations, decisions, and next steps together instead of scattered across tools.</p></article>
+      </section>
+      <section class="about-note"><div class="section-wrap"><span class="note-check">✓</span><p><strong>Designed for responsible collaboration.</strong> The product experience is built around review, transparency, and meaningful human oversight.</p></div></section>
+    </main>
+
+    <main class="route-page use-cases-page" id="use-cases-page" hidden>
+      <section class="route-hero section-wrap">
+        <div class="eyebrow"><span class="eyebrow-line"></span> USE CASES</div>
+        <h1>From first idea<br>to <span class="serif-accent">confident release.</span></h1>
+        <p>Use EmpowerHub Copilot to guide software projects through the work that matters—from defining the problem to preparing a deployment.</p>
+      </section>
+      <section class="use-case-grid section-wrap">
+        <article class="use-case-card"><span class="use-case-number">01 / DISCOVER</span><span class="use-case-icon">⌕</span><h2>Turn an idea into clear requirements</h2><p>Describe the users and problem. Work with Copilot to shape a scope, user stories, constraints, and acceptance criteria.</p><span class="use-case-output">OUTPUT <b>Reviewed requirements brief</b></span></article>
+        <article class="use-case-card"><span class="use-case-number">02 / PLAN</span><span class="use-case-icon">▤</span><h2>Build a practical delivery plan</h2><p>Break the work into milestones, identify dependencies, and decide what belongs in the first release.</p><span class="use-case-output">OUTPUT <b>Prioritized project plan</b></span></article>
+        <article class="use-case-card"><span class="use-case-number">03 / DEVELOP</span><span class="use-case-icon">⌘</span><h2>Develop with context</h2><p>Use project context to guide implementation, review changes, and keep technical decisions connected to the goal.</p><span class="use-case-output">OUTPUT <b>Implementation steps & code review</b></span></article>
+        <article class="use-case-card"><span class="use-case-number">04 / VALIDATE</span><span class="use-case-icon">✓</span><h2>Test before you ship</h2><p>Plan critical user journeys, test coverage, quality checks, and release readiness around agreed acceptance criteria.</p><span class="use-case-output">OUTPUT <b>Test plan & quality checklist</b></span></article>
+        <article class="use-case-card"><span class="use-case-number">05 / RELEASE</span><span class="use-case-icon">↗</span><h2>Prepare a safer deployment</h2><p>Organize environment setup, staging, monitoring, rollout, and rollback considerations before release.</p><span class="use-case-output">OUTPUT <b>Deployment readiness plan</b></span></article>
+        <article class="use-case-card use-case-cta"><span class="use-case-number">START A PROJECT</span><span class="use-case-icon">✳</span><h2>Bring your next build into focus.</h2><p>Open the workspace and start with the requirement you need to solve.</p><a href="#dashboard" data-route="dashboard" class="text-link">Open dashboard <span aria-hidden="true">↗</span></a></article>
+      </section>
+      <p class="use-case-disclaimer section-wrap">These are intended product workflows. Local AI chat is available when Ollama is running; code execution, automated testing, and deployment are not connected.</p>
+    </main>
+
+    <main class="route-page sign-in-page" id="sign-in-page" hidden>
+      <section class="sign-in-layout">
+        <div class="sign-in-story">
+          <a class="brand" href="#home" data-route="home" aria-label="EmpowerHub home"><span class="brand-symbol" aria-hidden="true"><i></i><i></i><i></i></span><span class="brand-name">Empower<span>Hub</span></span><span class="brand-divider"></span><span class="brand-product">CodePilot</span></a>
+          <div class="sign-in-story-copy"><div class="eyebrow eyebrow-light"><span class="eyebrow-line"></span> YOUR NEXT BUILD STARTS HERE</div><h1>Bring your idea.<br><span class="serif-accent">Build with purpose.</span></h1><p>One project space for requirements, planning, development, testing, and deployment readiness.</p><div class="sign-in-phases"><span>Requirements</span><i>→</i><span>Plan</span><i>→</i><span>Develop</span><i>→</i><span>Test</span><i>→</i><span>Deploy</span></div></div>
+          <span class="sign-in-footnote">AI Agentic Empower Hub Copilot · Interactive prototype</span>
+        </div>
+        <div class="sign-in-card-wrap"><form class="sign-in-card" id="sign-in-form"><a class="sign-in-back" href="#home" data-route="home">← Back to home</a><span class="sign-in-eyebrow">WELCOME TO EMPOWERHUB</span><h2>Explore your workspace</h2><p>Customer accounts are coming soon. Enter the preview without an email or password.</p><button type="submit" class="button button-dark sign-in-submit">Continue <span aria-hidden="true">→</span></button><p class="sign-in-demo-note"><span>ⓘ</span> Demo only. No account is created and your credentials are not sent or stored.</p></form></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#home" aria-label="EmpowerHub home"><span class="brand-symbol" aria-hidden="true"><i></i><i></i><i></i></span><span class="brand-name">Empower<span>Hub</span></span><span class="brand-divider"></span><span class="brand-product">CodePilot</span></a>
+      <span class="footer-tagline">AI that empowers people to do their best work.</span>
+      <div class="footer-links"><a href="#home" data-route="home">Home</a><a href="#pricing" id="footer-pricing-link">Pricing</a><a href="#faq" id="footer-faq-link">FAQ</a></div>
+      <span class="copyright">© <span id="year"></span> AI Agentic Empower Hub Copilot</span>
+    </footer>
+  </body>
+</html>
